@@ -1136,6 +1136,7 @@ odm/etc/permissions/vendor-oplus-hardware-charger.xml
 odm/etc/vintf/manifest/manifest_oplus_charger.xml
 odm/lib/vendor.oplus.hardware.charger@1.0.so
 odm/lib64/vendor.oplus.hardware.charger@1.0.so
+odm/firmware/fastchg/charging_thermal_config_default.txt
 
 # DMC
 vendor/bin/dmc_core
@@ -1207,7 +1208,8 @@ vendor/lib/vendor.oplus.hardware.commondcs@1.0.so
 vendor/lib64/vendor.oplus.hardware.commondcs@1.0.so
 
 # Firmware
-odm/firmware/fastchg/charging_thermal_config_default.txt
+odm/firmware/tp/20682/FW_GT9886_SAMSUNG_FAE.img
+odm/firmware/tp/20682/FW_GT9886_SAMSUNG.img
 odm/firmware/tp/20682/FW_NT36672C_NF_BOE.bin
 odm/firmware/tp/20682/FW_NT36672C_NF_BOE_FAE.bin
 odm/firmware/tp/20682/FW_NT36672C_NF_BOE_TEST.bin
@@ -1220,6 +1222,13 @@ odm/firmware/tp/20682/FW_NT36672C_NF_TIANMA_TEST.bin
 odm/firmware/tp/20682/LIMIT_NT36672C_NF_BOE.img
 odm/firmware/tp/20682/LIMIT_NT36672C_NF_JDI.img
 odm/firmware/tp/20682/LIMIT_NT36672C_NF_TIANMA.img
+odm/firmware/tp/20682/LIMIT_GT9886_SAMSUNG.img
+odm/firmware/tp/20730/FW_FT3518_SAMSUNG_FAE.img
+odm/firmware/tp/20730/FW_FT3518_SAMSUNG.img
+odm/firmware/tp/20730/FW_GT9886_SAMSUNG_FAE.img
+odm/firmware/tp/20730/FW_GT9886_SAMSUNG.img
+odm/firmware/tp/20730/LIMIT_FT3518_SAMSUNG.img
+odm/firmware/tp/20730/LIMIT_GT9886_SAMSUNG.img
 odm/firmware/barca_alarm_ring_RTP_120.bin
 odm/firmware/barca_incoming_ring_RTP_121.bin
 odm/firmware/barca_notice_ring_RTP_122.bin
@@ -1738,6 +1747,8 @@ odm/etc/jdi_nt_nt36672c_dsjm_eyeprotect_data.xml
 odm/etc/tianma_nt36672c_tianma_eyeprotect_data.xml
 odm/etc/tm_nt37701_2048_tm_nt37701_42_eyeprotect_data.xml
 odm/etc/tm_nt37701_2048_tm_nt37701_42_srgb_eyeprotect_data.xml
+odm/etc/samsung2048_ana6705_samsung_eyeprotect_data.xml
+odm/etc/samsung2048_ana6705_samsung_srgb_eyeprotect_data.xml
 
 # ORMS
 odm/lib/libormshalclient.so
