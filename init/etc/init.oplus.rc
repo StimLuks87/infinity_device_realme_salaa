@@ -1,0 +1,92 @@
+##################################################################################
+### Copyright (C) 2018-2020 Oplus. All rights reserved.
+###
+### File: - init.oplus.rc
+###
+### ------------------------------- Revision History: ----------------------------
+### <author>                        <data>       <version>   <desc>
+##################################################################################
+
+on init
+    chown system system /proc/fastchg_fw_update
+    chown system system /sys/class/oplus_chg/battery/short_c_hw_status
+    chown system system /sys/class/oplus_chg/battery/short_c_hw_feature
+    chown system system /sys/class/oplus_chg/battery/short_c_limit_chg
+    chown system system /sys/class/oplus_chg/battery/short_c_limit_rechg
+    chown system system /sys/class/oplus_chg/battery/short_ic_volt_thresh
+    chown system system /sys/class/oplus_chg/battery/short_ic_otp_status
+    chown system system /sys/class/oplus_chg/battery/short_ic_otp_value
+    chown system system /sys/class/oplus_chg/battery/ship_mode
+    chown system system /sys/class/oplus_chg/battery/cool_down
+    chown system system /sys/class/oplus_chg/battery/bcc_current
+    chown system system /sys/class/oplus_chg/battery/bcc_exception
+    chown system system /sys/class/oplus_chg/battery/call_mode
+    chown system system /sys/class/oplus_chg/battery/mmi_charging_enable
+    chmod 0664 /sys/class/oplus_chg/battery/soc_ajust
+    chown system system /sys/class/oplus_chg/battery/soc_ajust
+    chown system system /sys/class/oplus_chg/battery/voocchg_ing
+    chown system system /sys/class/oplus_chg/usb/otg_switch
+    chown system system /sys/class/oplus_chg/usb/usb_status
+    chown system system /sys/class/oplus_chg/common/mutual_cmd
+    chown system system /sys/module/oplus_chg/parameters/gauge_dbg_tbat
+    chown system system /sys/class/oplus_chg/battery/bcc_parms
+    chown system system /proc/charger/reserve_soc_debug
+    chown system system /sys/devices/virtual/oplus_chg/usb/otg_switch
+
+on boot
+    chown system system /proc/touchpanel/tp_fw_update
+    chown system system /proc/touchpanel/oplus_tp_limit_enable
+    chown system system /proc/touchpanel/oplus_tp_direction
+    chown system system /proc/touchpanel/double_tap_enable
+    chown system system /proc/touchpanel/coordinate
+    chown system system /proc/touchpanel/game_switch_enable
+    chown system system /proc/touchpanel/fp_enable
+    chown system system /proc/touchpanel/baseline_test
+    chown system system /proc/touchpanel/kernel_grip_handle
+    chown system system /proc/touchpanel/curved_size
+    chown system system /proc/touchpanel/charge_detect
+    chown system system /proc/touchpanel/wireless_charge_detect
+    chown system system /proc/tbatt_pwroff
+    chown system system /proc/charger/charger_factorymode_test
+    chown system system /proc/charger/integrate_gauge_fcc_flag
+    chown system system /sys/class/power_supply/battery/smooth_switch
+    chown system system /sys/class/power_supply/battery/soc_notify_ready
+    chown system system /sys/class/power_supply/battery/charging_enabled
+    chown system system /sys/class/power_supply/usb/type
+    chown system system /sys/class/power_supply/battery/restore_soc
+    chown system system /sys/class/power_supply/battery/soc_reporting_ready
+    chown system system /sys/class/power_supply/battery/battery_info
+    chown system system /sys/class/power_supply/battery/battery_info_id
+
+    chown system system /proc/charger/hmac
+    chown system system /sys/class/oplus_chg/battery/call_mode
+    chown system system /sys/class/oplus_chg/battery/cool_down
+    chown system system /sys/class/oplus_chg/battery/bcc_current
+    chown system system /sys/class/oplus_chg/battery/bcc_exception
+    chown system system /sys/class/oplus_chg/battery/mmi_charging_enable
+    chown system system /sys/class/oplus_chg/battery/ship_mode
+    chown system system /sys/class/oplus_chg/usb/otg_switch
+    chown system system /sys/class/oplus_chg/battery/em_mode
+
+    chown system system /sys/kernel/oplus_display/dump_info
+    chown system system /sys/kernel/oplus_display/LCM_CABC
+    chown system system /sys/kernel/oplus_display/ffl_set
+    chown system system /sys/kernel/oplus_display/power_status
+    chown system system /sys/kernel/oplus_display/sau_closebl_node
+    chown system system /sys/kernel/oplus_display/esd_status
+    chown system system /sys/kernel/oplus_display/hbm
+    chown system system /sys/kernel/oplus_display/aod_area
+    chown system system /sys/devices/virtual/mtk_disp_mgr/mtk_disp_mgr/LCM_ESS
+    chown system system /sys/kernel/oplus_display/notify_fppress
+    chown system system /sys/kernel/oplus_display/aod_light_mode_set
+    chown system system /sys/kernel/oplus_display/dimlayer_bl_en
+    chown system system /sys/kernel/oplus_display/seed
+
+    # Update fastcharge firmware
+    write /proc/fastchg_fw_update 1
+    write /proc/ui_soc_decimal 1
+
+    # Update touchpanel firmware in case we ship newer firmware in /odm
+    write /proc/touchpanel/tp_fw_update 1
+    write /proc/touchpanel/oplus_tp_direction 1
+    write /proc/touchpanel/oplus_tp_limit_enable 1
