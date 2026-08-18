@@ -133,4 +133,4 @@ persist.device_config.runtime_native.usap_pool_enabled=true
 ro.infinity.battery=5000 mAh
 ro.infinity.camera=48MP + 8MP + 2MP + 2MP
 ro.infinity.display=1080 x 2400, 90Hz
-ro.infinity.soc=MT6785
+ro.infinity.soc=MT6785V/CD
