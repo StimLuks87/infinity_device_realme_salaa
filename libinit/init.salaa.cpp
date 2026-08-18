@@ -4,7 +4,6 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-
 #include <vector>
 #include <string>
 #include <cstdlib>
@@ -158,6 +157,7 @@ void set_device_props(void){
     set_ro_build_prop("model", model);
     set_ro_build_prop("name", model);
     set_ro_build_prop("product", model, false);
+	set_ro_build_prop("marketname", market_name);
     property_override("ro.product.device", device.c_str());
     property_override("ro.vendor.device", device.c_str());
     property_override("ro.infinity.device", device.c_str());
