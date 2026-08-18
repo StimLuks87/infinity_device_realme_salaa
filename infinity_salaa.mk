@@ -37,7 +37,7 @@ PRODUCT_NAME := infinity_salaa
 PRODUCT_DEVICE := salaa
 PRODUCT_MANUFACTURER := realme
 PRODUCT_BRAND := realme
-PRODUCT_MODEL := salaa
+PRODUCT_MODEL := RMX2156
 
 PRODUCT_GMS_CLIENTID_BASE := android-realme
 
