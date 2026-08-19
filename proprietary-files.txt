@@ -231,6 +231,7 @@ vendor/lib64/libbluetooth_mtk_pure.so
 vendor/lib64/libbluetoothem_mtk.so
 vendor/lib64/libbt-vendor.so
 vendor/lib64/libbluetooth_relayer.so
+vendor/lib64/libbluetooth_hw_test.so
 
 # Bluetooth (LDAC)
 system/lib/libldacBT_abr.so
