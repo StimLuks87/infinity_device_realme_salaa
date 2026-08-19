@@ -106,6 +106,14 @@ ro.hardware.hwcomposer=mt6785
 ro.hardware.gatekeeper=trustonic
 ro.hardware.kmsetkey=trustonic
 
+# Hwui
+debug.hwui.render_dirty_regions=false
+debug.hwui.skia_tracing_enabled=false
+debug.hwui.trace_gpu_resources=false
+debug.hwui.skia_atrace_enabled=false
+debug.hwui.skia_use_perfetto_track_events=false
+debug.hwui.renderer=skiagl
+
 # TEE
 ro.vendor.mtk_gwsd_support=1
 
