@@ -270,7 +270,7 @@ ro.vendor.mtk.sensor.support=yes
 
 # Soc
 ro.soc.manufacturer=MediaTek
-ro.soc.model=MT6785
+ro.soc.model=MT6785V/CD
 
 # Thermal
 vendor.thermal.config=thermal_info_config.json
