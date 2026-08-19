@@ -218,14 +218,15 @@ ro.vendor.sim_me_lock_mode=3
 ro.vendor.sim_refresh_reset_by_modem=1
 ro.vendor.radio.max.multisim=dsds
 
-# LMK
-ro.lmk.kill_timeout_ms=100
-ro.lmk.psi_complete_stall_ms=70
-ro.lmk.psi_partial_stall_ms=70
-ro.lmk.swap_free_low_percentage=30
-ro.lmk.swap_util_max=90
-ro.lmk.thrashing_limit=30
-ro.lmk.thrashing_limit_decay=2
+# LMKD
+ro.lmk.use_psi=true
+ro.lmk.use_minfree_levels=false
+ro.lmk.kill_heaviest_task=false
+ro.lmk.kill_timeout_ms=1000
+ro.lmk.psi_partial_stall_ms=200
+ro.lmk.psi_complete_stall_ms=700
+ro.lmk.thrashing_limit=80
+ro.lmk.thrashing_limit_decay=10
 
 # IMS
 telephony.lteOnCdmaDevice=0
