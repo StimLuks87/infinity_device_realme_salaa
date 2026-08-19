@@ -1130,13 +1130,23 @@ odm/etc/camera/dualcal_golden.bin
 odm/etc/camera/fwk_config.json
 
 # Charger
+odm/firmware/fastchg/charging_thermal_config_default.txt
+odm/firmware/fastchg/20171/oplus_vooc_fw_op10.bin
+odm/firmware/fastchg/20353/oplus_vooc_fw_op10.bin
+odm/firmware/fastchg/20615/charging_thermal_config_default.txt
+odm/firmware/fastchg/20662/charging_thermal_config_default.txt
+odm/firmware/fastchg/20827/oplus_vooc_fw_op10.bin
+odm/firmware/fastchg/20827/oplus_vooc_fw_rt5125.bin
+odm/firmware/fastchg/20831/oplus_vooc_fw_op10.bin
+odm/firmware/fastchg/20831/oplus_vooc_fw_rt5125.bin
+odm/firmware/fastchg/21609/charging_thermal_config_default.txt
+odm/firmware/fastchg/21651/charging_thermal_config_default.txt
 odm/bin/hw/vendor.oplus.hardware.charger@1.0-service
 odm/etc/init/vendor.oplus.hardware.charger@1.0-service.rc
 odm/etc/permissions/vendor-oplus-hardware-charger.xml
 odm/etc/vintf/manifest/manifest_oplus_charger.xml
 odm/lib/vendor.oplus.hardware.charger@1.0.so
 odm/lib64/vendor.oplus.hardware.charger@1.0.so
-odm/firmware/fastchg/charging_thermal_config_default.txt
 
 # DMC
 vendor/bin/dmc_core
