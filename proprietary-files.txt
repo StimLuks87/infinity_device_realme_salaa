@@ -8,10 +8,6 @@ vendor/lib64/libaal_key.so
 vendor/lib64/libaal_mtk.so
 vendor/lib64/libaalservice.so
 
-# AEE
-vendor/lib/libladder.so
-vendor/lib64/libladder.so
-
 # APU
 system_ext/lib64/libapuwareapusys.mtk.so:vendor/lib64/APUWareApusysServer.so;FIX_SONAME
 system_ext/lib64/libapuwareapusys_v2.mtk.so:vendor/lib64/APUWareApusysServer_v2.so;FIX_SONAME
