@@ -2078,13 +2078,11 @@ odm/etc/wifi/wifi_active_channel.cfg
 odm/etc/wifi/wifi_passive_channel.cfg
 vendor/bin/netdc
 vendor/bin/wfca
-vendor/bin/wlan_assistant
 vendor/bin/wmt_launcher
 vendor/bin/wmt_loader
 vendor/etc/init/init.wfca.rc
 vendor/etc/init/init.wod.rc
 vendor/etc/init/networksetting.rc
-vendor/etc/init/wlan_assistant.rc
 vendor/lib64/libapmonitor_vendor.so
 vendor/lib64/libwifitest.so
 vendor/lib64/libwo.so
