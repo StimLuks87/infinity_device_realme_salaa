@@ -21,8 +21,11 @@ ro.mtk_pq.ctrld_dpi_support=1
 qemu.hw.mainkeys=0
 qemu.sf.lcd_density=440
 
-# Dalvik
-dalvik.vm.dex2oat64.enabled=true
+# Dex2oat
+dalvik.vm.dex2oat-cpu-set=4,5,6,7
+dalvik.vm.dex2oat-threads=4
+dalvik.vm.image-dex2oat-cpu-set=4,5,6,7
+dalvik.vm.image-dex2oat-threads=4
 
 # Misc
 persist.vendor.pms_removable=1
