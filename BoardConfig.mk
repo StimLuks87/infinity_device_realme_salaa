@@ -111,7 +111,7 @@ BOARD_MAIN_SIZE := 9122611200
 BOARD_MAIN_PARTITION_LIST := system system_ext vendor product odm
 
 BOARD_EROFS_PCLUSTER_SIZE := 262144
-BOARD_EROFS_COMPRESSOR := lz4
+BOARD_EROFS_COMPRESSOR := lz4hc,12
 
 ifeq ($(TARGET_RO_FILE_SYSTEM_TYPE),ext4)
 -include vendor/infinity/config/BoardConfigReservedSize.mk
