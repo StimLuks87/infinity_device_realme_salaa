@@ -23,6 +23,7 @@ namespace_imports = [
     'hardware/google/interfaces',
     'hardware/google/pixel',
     'hardware/mediatek',
+    'hardware/mediatek/libion_mtk',
     'hardware/mediatek/libmtkperf_client',
     'hardware/mediatek/libaedv',
     'hardware/oplus',
